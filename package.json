@@ -1,24 +1,34 @@
 {
-  "name": "monaca-template-minimum",
-  "version": "4.1.3",
-  "displayName": "Monaca Template Minimum",
-  "engines": {
-    "node": ">=18.16"
-  },
-  "dependencies": {
-    "monaca-plugin-monaca-core": "3.3.1"
-  },
-  "scripts": {
-    "monaca:preview": "npm run dev",
-    "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"
-  },
-  "cordova": {
-    "plugins": {
-      "monaca-plugin-monaca-core": {}
+    "name": "monaca-template-minimum",
+    "version": "4.1.3",
+    "displayName": "Monaca Template Minimum",
+    "engines": {
+        "node": ">=18.16"
+    },
+    "dependencies": {
+        "monaca-plugin-monaca-core": "3.3.1",
+        "cordova-plugin-dialogs": "2.0.2",
+        "cordova-plugin-file": "8.0.1",
+        "cordova-plugin-vibration": "3.1.1",
+        "cordova-plugin-camera": "7.0.0",
+        "cordova-plugin-media": "7.0.0"
+    },
+    "scripts": {
+        "monaca:preview": "npm run dev",
+        "dev": "browser-sync start -s www/ --watch --port 8080 --ui-port 8081"
+    },
+    "cordova": {
+        "plugins": {
+            "monaca-plugin-monaca-core": {},
+            "cordova-plugin-dialogs": {},
+            "cordova-plugin-file": {},
+            "cordova-plugin-vibration": {},
+            "cordova-plugin-camera": {},
+            "cordova-plugin-media": {}
+        }
+    },
+    "devDependencies": {
+        "browser-sync": "~2.27.7",
+        "cordova": "^12.0.0"
     }
-  },
-  "devDependencies": {
-    "browser-sync": "~2.27.7",
-    "cordova": "^12.0.0"
-  }
 }
